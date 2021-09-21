@@ -1,0 +1,14 @@
+INPUT "Besar Temperatur" with any value
+INPUT "tipe temperatur" with value Fahrenheit OR Kelvin OR Celcius
+SET fahrenkecelcius = (Value - 32)  * (5/9)
+SET kelvintocelcius = (Value - 273.15)
+SET celiustocelcius = Value
+DEF konversi(i)
+   IF "Tipe Temperatur" = Fahreheit
+	DO fahrenkecelcius
+   ELSE IF "Tipe Temperatur" = Kelvin
+	DO kelvintocelcius
+   ELSE 
+	DO celciustocelcius
+DISPLAY konversi() 
+
